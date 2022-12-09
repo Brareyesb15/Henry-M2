@@ -36,7 +36,7 @@ creadoX.textContent = "Aplicación creada por Brandon"
 
 // Tu código acá:
 ToDo.prototype.completeToDo = function() {
-  this.complete = !this.complete;
+  this.complete = !this.complete
 }
 
 
