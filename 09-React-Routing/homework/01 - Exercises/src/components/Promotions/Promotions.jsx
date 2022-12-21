@@ -17,7 +17,7 @@ export default function Promotions() {
       />
       <img
         style={{ width: "50vw", paddingTop: "2em" }}
-        src="https://www.tarjetadeoferta.com/uploads/contest_det/avatar_dets/000/000/002/original/Banner.jpg"
+        src="https://cdn-content.crucerum.com/public/storage/destinos/1517345477.jpg"
         alt="prom2"
       />
       <img
