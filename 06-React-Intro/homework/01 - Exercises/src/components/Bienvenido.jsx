@@ -1,5 +1,5 @@
 import React from "react";
-import Botones from "./Botones.jsx";
+import Botones from "./Botones";
 
 const studentName = "Brandon Reyes";
 const techSkills = ["Html", "Css", "JavaScript", "React", "Redux"];

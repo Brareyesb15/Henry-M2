@@ -55,14 +55,14 @@ describe('02 | Componente "Botones"', () => {
 
   it("El primer botón debe mostrar un 'alert' con el texto que recibe el componente como propiedad 'alerts.m1'", () => {
     // jsdom simula el comportamiento de un navegador pero no soporta window.alert, por eso en una variable se guarda el jsdom alert original y luego proveemos una implementación vacía de window.alert para evitar errores
-    const jsdomAlert = window.alert;
-    window.alert = () => {};
-    const spy = jest.spyOn(window, "alert");
+    const jsdomAlert = global.alert;
+    global.alert = () => {};
+    const spy = jest.spyOn(global, "alert");
     const botonM1 = divBotones.find("button").at(0);
     botonM1.props().onClick();
     expect(spy).toHaveBeenCalledWith(alerts.m1);
     // Restauramos el alert original
-    window.alert = jsdomAlert;
+    global.alert = jsdomAlert;
   });
 
   it("El segundo botón debe mostrar un 'alert' con el texto que recibe el componente como propiedad 'alerts.m2'", () => {
