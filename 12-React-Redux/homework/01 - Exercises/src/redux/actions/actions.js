@@ -1,4 +1,4 @@
-const {  ADD_PRODUCT, DELETE_PRODUCT, GET_STORE_NAME, } = require('../actions/types');
+import {  ADD_PRODUCT, DELETE_PRODUCT, GET_STORE_NAME, } from "../../redux/actions/types"
 import axios from 'axios';
 
 export const addProduct = (product) => {
